@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,user-scalable=0,maximum-scale=1.0,minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/school/index.css" />
+    <link rel="stylesheet" href="./fonts/iconfont.css" />
+    <link rel="stylesheet" href="./css/school/style.css" />
+    <title>我的学校</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 导航栏模块 -->
+      <div class="row">
+        <div class="nav">
+          <div class="logo">
+            <img src="./images/logo.PNG" alt="" />
+          </div>
+          <ul class="menu hidden-xs hidden-sm">
+            <li class="items">
+              <a href="./index.html">
+                <span>主 页</span>
+                <span an>Home</span>
+              </a>
+              <div class="bg"></div>
+            </li>
+            <li class="items">
+              <a href="./myself.html">
+                <span>个人介绍</span>
+                <span>Myself</span>
+              </a>
+              <div class="bg"></div>
+            </li>
+            <li class="items">
+              <a href="./school.html" style="color: #fff">
+                <span>我的学校</span>
+                <span>School</span>
+              </a>
+              <div class="bg" style="display: block; height: 100%"></div>
+            </li>
+            <li class="items">
+              <a href="./leshan.html">
+                <span>大乐山</span>
+                <span>Leshan</span>
+              </a>
+              <div class="bg"></div>
+            </li>
+            <li class="items">
+              <a href="./contact.html">
+                <span>联系我们</span>
+                <span>Contact</span>
+              </a>
+              <div class="bg"></div>
+            </li>
+          </ul>
+          <div class="menu-small hidden-md hidden-lg">
+            <span class="glyphicon glyphicon-list"></span>
+            <ul class="list" style="display: none">
+              <li class="items">
+                <a href="./index.html">主 页</a>
+                <div class="underline"></div>
+              </li>
+              <li class="items">
+                <a href="./myself.html">个人介绍</a>
+                <div class="underline"></div>
+              </li>
+              <li class="items">
+                <a href="./school.html" style="color: #92c528">我的学校</a>
+                <div class="underline" style="width: 100%"></div>
+              </li>
+              <li class="items">
+                <a href="./chongqing.html">大乐山</a>
+                <div class="underline"></div>
+              </li>
+              <li class="items">
+                <a href="contact.html">联系我们</a>
+                <div class="underline"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- banner模块  -->
+      <div class="row">
+        <div class="sideshow">
+          <div id="app" data-state="0">
+            <div class="ui-big-images">
+              <div class="ui-big-image" data-key="0">
+                <img src="./images/school/banner-1.jpg" alt="" />
+              </div>
+              <div class="ui-big-image" data-key="1">
+                <img src="./images/school/banner-2.jpg" alt="" />
+              </div>
+              <div class="ui-big-image" data-key="2">
+                <img src="./images/school/banner-3.jpg" alt="" />
+              </div>
+              <div class="ui-big-image" data-key="3">
+                <img src="./images/school/banner-4.jpeg" alt="" />
+              </div>
+              <div class="ui-big-image" data-key="4">
+                <img src="./images/school/banner-5.png" alt="" />
+              </div>
+              <div class="ui-big-image" data-key="5">
+                <img src="./images/school/banner-6.jpg" alt="" />
+              </div>
+            </div>
+            <div class="ui-thumbnails">
+              <div class="ui-thumbnail" tabindex="-1" data-key="0">
+                <img src="./images/school/banner-1.jpg" alt="" />
+                <div class="ui-cuticle" data-flip-key="cuticle"></div>
+              </div>
+              <div class="ui-thumbnail" tabindex="-1" data-key="1">
+                <img src="./images/school/banner-2.jpg" alt="" />
+                <div class="ui-cuticle" data-flip-key="cuticle"></div>
+              </div>
+              <div class="ui-thumbnail" tabindex="-1" data-key="2">
+                <img src="./images/school/banner-3.jpg" alt="" />
+                <div class="ui-cuticle" data-flip-key="cuticle"></div>
+              </div>
+              <div class="ui-thumbnail" tabindex="-1" data-key="3">
+                <img src="./images/school/banner-4.jpeg" alt="" />
+                <div class="ui-cuticle" data-flip-key="cuticle"></div>
+              </div>
+              <div class="ui-thumbnail" tabindex="-1" data-key="4">
+                <img src="./images/school/banner-5.png" alt="" />
+                <div class="ui-cuticle" data-flip-key="cuticle"></div>
+              </div>
+              <div class="ui-thumbnail" tabindex="-1" data-key="5">
+                <img src="./images/school/banner-6.jpg" alt="" />
+                <div class="ui-cuticle" data-flip-key="cuticle"></div>
+              </div>
+            </div>
+            <div class="ui-content">
+              <nav class="ui-nav">
+                <button id="prev" tabindex="-1" title="Previous">&lt;</button>
+                <button id="next" tabindex="-1" title="Next">&gt;</button>
+              </nav>
+
+              <div class="ui-articles">
+                <article class="ui-article" data-key="0">
+                  <h2 class="ui-heading">图书馆</h2>
+                  <p class="ui-paragraph">
+                    <span class="visible-xs">
+                      图书馆蕴藏了经济、文学、教育、语言、计算机类等知识。
+                    </span>
+                    <span class="visible-sm">
+                      图书馆蕴藏了经济、文学、教育、语言、计算机类等知识，等待轻化工学子翻开书页，创新的一体化服务方式使求知者直通知识之门。
+                    </span>
+                    <span class="visible-md">
+                      图书馆蕴藏了经济、文学、教育、语言、计算机类等知识，等待轻化工学子翻开书页，创新的一体化服务方式使求知者直通知识之门。整洁雅致的自习室“梦厅”，也为轻化工学子打造了高效舒适的学习环境。
+                    </span>
+                    <span class="visible-lg">
+                      常言“书中自有黄金屋”，静谧书阁，墨香传递，浩瀚书籍以此馆为家，图书馆蕴藏了经济、文学、教育、语言、计算机类等知识，等待轻化工学子翻开书页，创新的一体化服务方式使求知者直通知识之门。整洁雅致的自习室“梦厅”，也为轻化工学子打造了高效舒适的学习环境。
+                    </span>
+                  </p>
+                </article>
+                <article class="ui-article" data-key="1">
+                  <h2 class="ui-heading">游泳馆</h2>
+                  <p class="ui-paragraph">
+                    <span class="visible-xs">
+                      国际标准的大泳池连续游100米以及双踩水30秒可得深水证。
+                    </span>
+                    <span class="visible-sm">
+                      国际标准的大泳池连续游100米以及双踩水30秒可得深水证。国际标准的大泳池连续游100米以及双踩水30秒可得深水证。
+                    </span>
+                    <span class="visible-md">
+                      国际标准的大泳池连续游100米以及双踩水30秒可得深水证。国际标准的大泳池连续游100米以及双踩水30秒可得深水证。
+                    </span>
+                    <span class="visible-lg">
+						国际标准的大泳池连续游100米以及双踩水30秒可得深水证。国际标准的大泳池连续游100米以及双踩水30秒可得深水证。国际标准的大泳池连续游100米以及双踩水30秒可得深水证。国际标准的大泳池连续游100米以及双踩水30秒可得深水证。国际标准的大泳池连续游100米以及双踩水30秒可得深水证。国际标准的大泳池连续游100米以及双踩水30秒可得深水证。国际标准的大泳池连续游100米以及双踩水30秒可得深水证。
+                    </span>
+                  </p>
+                </article>
+                <article class="ui-article" data-key="2">
+                  <h2 class="ui-heading">盐都大剧院</h2>
+                  <p class="ui-paragraph">
+                    <span class="visible-xs">
+                       盐都音乐厅由同济大学设计、中国五冶集团承建，座位数551座，
+                    </span>
+                    <span class="visible-sm">
+                      盐都音乐厅由同济大学设计、中国五冶集团承建，座位数551座，专门进行了声学深化设计以保障高水平音乐会的现场效果。
+                    </span>
+                    <span class="visible-md">
+						盐都音乐厅由同济大学设计、中国五冶集团承建，座位数551座，专门进行了声学深化设计以保障高水平音乐会的现场效果。随着音乐厅、剧场等场地的建成，
+                    </span>
+                    <span class="visible-lg">
+                    盐都音乐厅由同济大学设计、中国五冶集团承建，座位数551座，专门进行了声学深化设计以保障高水平音乐会的现场效果。随着音乐厅、剧场等场地的建成，以及施坦威专业演奏钢琴等设备到位，极大鼓舞了音乐学院师生。
+                    </span>
+                  </p>
+                </article>
+                <article class="ui-article" data-key="3">
+                  <h2 class="ui-heading">音乐喷泉</h2>
+                  <p class="ui-paragraph">
+                    <span class="visible-xs">
+                      音乐喷泉将高科技应用于它的音乐喷泉系统之中，创新性地将水幕电影、水幕投影、夜间水上芭蕾等表演形式融入其中，创造出了一个全新的音乐灯光水景秀。
+                      
+                    </span>
+                    <span class="visible-sm">
+						音乐喷泉将高科技应用于它的音乐喷泉系统之中，创新性地将水幕电影、水幕投影、夜间水上芭蕾等表演形式融入其中，创造出了一个全新的音乐灯光水景秀。
+						
+                    </span>
+                    <span class="visible-md">
+						音乐喷泉将高科技应用于它的音乐喷泉系统之中，创新性地将水幕电影、水幕投影、夜间水上芭蕾等表演形式融入其中，创造出了一个全新的音乐灯光水景秀。
+						
+                    </span>
+                    <span class="visible-lg">
+						音乐喷泉将高科技应用于它的音乐喷泉系统之中，创新性地将水幕电影、水幕投影、夜间水上芭蕾等表演形式融入其中，创造出了一个全新的音乐灯光水景秀。
+						
+                    </span>
+                  </p>
+                </article>
+                <article class="ui-article" data-key="4">
+                  <h2 class="ui-heading">醇泉湖</h2>
+                  <p class="ui-paragraph">
+                    <span class="visible-xs">
+                      周围湖潭映月，壁潭辉映，人游其中如醇泉之上，美景、诗情、画意尽有。
+                    </span>
+                    <span class="visible-sm">
+                      周围湖潭映月，壁潭辉映，人游其中如醇泉之上，美景、诗情、画意尽有。醇泉湖上的月，勾起了我的梦；醇泉湖下的水，打湿了心头思乡的那份感动。
+                    </span>
+                    <span class="visible-md">
+                      周围湖潭映月，壁潭辉映，人游其中如醇泉之上，美景、诗情、画意尽有。想起当年那山与水，初恋的情景。那晚就像此时，月依着湖，我牵着风，风轻摇着水面上的两个倒影。
+                    </span>
+                    <span class="visible-lg">
+                      周围湖潭映月，壁潭辉映，人游其中如醇泉之上，美景、诗情、画意尽有。醇泉湖上的月，勾起了我的梦；醇泉湖下的水，打湿了心头思乡的那份感动。想起当年那山与水，初恋的情景。那晚就像此时，月依着湖，我牵着风，风轻摇着水面上的两个倒影。
+                    </span>
+                  </p>
+                </article>
+                <article class="ui-article" data-key="5">
+                  <h2 class="ui-heading">文化广场</h2>
+                  <p class="ui-paragraph">
+                    <span class="visible-xs">
+                      文化广场将会成为学校老师和学弟学妹们新的“打卡点”。
+                    </span>
+                    <span class="visible-sm">
+                      文化广场位于四川轻化工大学城校内，在不久的将来，文化广场或将会成为学校老师和学弟学妹们新的“打卡点”，也将成为每位四川轻化工大学学子们新的“校友之家”。
+                    </span>
+                    <span class="visible-md">
+                      文化广场位于四川轻化工大学城校内，文化广场或将会成为学校老师和学弟学妹们新的“打卡点”，也将成为每位四川轻化工大学学子们新的“校友之家”。
+                    </span>
+                    <span class="visible-lg">
+                      文化广场位于四川轻化工大学城校内，在不久的将来，文化广场将会成为学校老师和学弟学妹们新的“打卡点”，也将成为每位四川轻化工大学学子们新的“校友之家”。
+                    </span>
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 页面主体 -->
+      <div class="row">
+        <div class="detail">
+          <div class="head">
+            <h4 class="visible-xs">那些川轻化你必须知道的地方</h4>
+            <h3 class="visible-sm visible-md">那些川轻化你必须知道的地方</h3>
+            <h2 class="visible-lg">那些川轻化你必须知道的地方</h2>
+          </div>
+          <div class="list clearfix">
+            <div class="items one col-xs-12 col-md-6 col-md-push-6">
+              <i
+                ><img
+                  src="./images/school/banner-1.jpg"
+                  alt=""
+                  style="display: block"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-1.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-1.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-1.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+            </div>
+            <div class="items one col-xs-12 col-md-6 col-md-pull-6">
+              <div class="summary">
+                <span class="title hidden-xs hidden-sm"> 图书馆 </span>
+                <span class="title sm visible-xs visible-sm"> 图书馆 </span>
+                <div class="visible-md visible-lg">
+                  <p>
+					  根据学校办学格局，图书馆现有3处校区图书馆，包括汇东校区、宜宾校区、李白河校区图书馆，读者座位12900余个。
+                  </p>
+                  <p>
+                   图书馆管理实行“藏、借、阅、咨、研”一体化模式，文献资源保障实行“以纸质文献为基础、以电子文献为主体、以文献传递为补充”的三级保障模式。
+                  </p>
+                  <p>
+                    馆内购买了122个国内外数据库
+                  </p>
+                </div>
+                <div class="xs visible-xs visible-sm">
+                  <p>
+                    图书馆位于三春湖西侧，地处校园中心位置，馆内共有260万余册纸质图书、35000余种中外文期刊(含电子期刊)、54个中外文数据库、93560册特藏文献。
+                  </p>
+                  <p>
+                    简洁的方体造型承载的是知识的庄重，大小建筑的穿插咬合体现出知识的美感，整体建筑为一个立体汉字“书”的造型。
+                  </p>
+                  <p>
+                    翠竹临风，细柳拂水，波光潋滟，清秀灵动，图书馆与三春湖成
+                    遥望之景。
+                  </p>
+                </div>
+              </div>
+              <div class="list-img hidden-xs hidden-sm">
+                <div class="items-img current">
+                  <img src="./images/school/banner-1.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-1.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-1.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-1.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+              </div>
+            </div>
+            <div class="items two col-xs-12 col-md-6">
+              <i
+                ><img
+                  src="./images/school/banner-2.jpg"
+                  alt=""
+                  style="display: block"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-2.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-2.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-2.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+            </div>
+            <div class="items two col-xs-12 col-md-6">
+              <div class="summary">
+                <span class="title hidden-xs hidden-sm"> 游泳馆 </span>
+                <span class="title sm visible-xs visible-sm"> 游泳馆 </span>
+                <div class="visible-md visible-lg">
+                  <p>
+                    国际标准的大泳池连续游100米以及双踩水30秒可得深水证。
+                  </p>
+                  <p>
+                    国际标准的大泳池连续游100米以及双踩水30秒可得深水证。
+                  </p>
+                  <p>
+                    国际标准的大泳池连续游100米以及双踩水30秒可得深水证。
+                  </p>
+                </div>
+                <div class="xs visible-xs visible-sm">
+                  <p>
+                    国际标准的大泳池连续游100米以及双踩水30秒可得深水证。
+                  </p>
+                  <p>
+                    国际标准的大泳池连续游100米以及双踩水30秒可得深水证。
+                  </p>
+                  <p>
+                    国际标准的大泳池连续游100米以及双踩水30秒可得深水证。
+                  </p>
+                </div>
+              </div>
+              <div class="list-img hidden-xs hidden-sm">
+                <div class="items-img current">
+                  <img src="./images/school/banner-2.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-2.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-2.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-2.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+              </div>
+            </div>
+            <div class="items three col-xs-12 col-md-6 col-md-push-6">
+              <i
+                ><img
+                  src="./images/school/banner-3.jpg"
+                  alt=""
+                  style="display: block"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-3.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-3.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-3.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+            </div>
+            <div class="items three col-xs-12 col-md-6 col-md-pull-6">
+              <div class="summary">
+                <span class="title hidden-xs hidden-sm"> 盐都大剧院 </span>
+                <span class="title sm visible-xs visible-sm"> 盐都大剧院 </span>
+                <div class="visible-md visible-lg">
+                  <p>
+                   盐都音乐厅由同济大学设计、中国五冶集团承建，座位数551座，专门进行了声学深化设计以保障高水平音乐会的现场效果。
+                  </p>
+                  <p>
+					随着音乐厅、剧场等场地的建成，以及施坦威专业演奏钢琴等设备到位，极大鼓舞了音乐学院师生。
+                  </p>
+                  <p>蒹葭苍苍，白露为霜。 所谓伊人，在水一方。</p>
+                </div>
+                <div class="xs visible-xs visible-sm">
+                  <p>
+                    每所大学都有一个美丽的情人坡，而每一个情人坡都留下过一段段甜蜜浪漫的爱恋，见证过一对对恋人的邂逅相约……成为一代代走出校园的学子们的青春回忆
+                  </p>
+                  <p>
+                    重师的情人坡位于三春湖湖畔，每到夏季，三春湖里开满了荷花。如果你来这里，就会看到坡上那一对对情侣或低语或追逐打闹或好友两三人聊天玩耍。
+                  </p>
+                  <p>蒹葭苍苍，白露为霜。 所谓伊人，在水一方。</p>
+                </div>
+              </div>
+              <div class="list-img hidden-xs hidden-sm">
+                <div class="items-img current">
+                  <img src="./images/school/banner-3.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-3.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-3.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-3.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+              </div>
+            </div>
+            <div class="items four col-xs-12 col-md-6">
+              <i
+                ><img
+                  src="./images/school/banner-4.jpeg"
+                  alt=""
+                  style="display: block"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-4.jpeg"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-4.jpeg"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-4.jpeg"
+                  alt=""
+                  style="display: none"
+              /></i>
+            </div>
+            <div class="items four col-xs-12 col-md-6">
+              <div class="summary">
+                <span class="title hidden-xs hidden-sm"> 音乐喷泉 </span>
+                <span class="title sm visible-xs visible-sm"> 音乐喷泉 </span>
+                <div class="visible-md visible-lg">
+                  <p>
+                    音乐喷泉将高科技应用于它的音乐喷泉系统之中，创新性地将水幕电影、水幕投影、夜间水上芭蕾等表演形式。
+                  </p>
+                  <p>
+                    音乐喷泉将高科技应用于它的音乐喷泉系统之中，创新性地将水幕电影、水幕投影、夜间水上芭蕾等表演形式。
+                  </p>
+                  <p>
+                    音乐喷泉将高科技应用于它的音乐喷泉系统之中，创新性地将水幕电影、水幕投影、夜间水上芭蕾等表演形式。
+                    
+                  </p>
+                </div>
+                <div class="xs visible-xs visible-sm">
+                  <p>
+                    音乐喷泉将高科技应用于它的音乐喷泉系统之中，创新性地将水幕电影、水幕投影、夜间水上芭蕾等表演形式。
+                  </p>
+                  <p>
+                    音乐喷泉将高科技应用于它的音乐喷泉系统之中，创新性地将水幕电影、水幕投影、夜间水上芭蕾等表演形式。
+                  </p>
+                  <p>
+                    音乐喷泉将高科技应用于它的音乐喷泉系统之中，创新性地将水幕电影、水幕投影、夜间水上芭蕾等表演形式。
+                    
+                  </p>
+                </div>
+              </div>
+              <div class="list-img hidden-xs hidden-sm">
+                <div class="items-img current">
+                  <img src="./images/school/banner-4.jpeg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-4.jpeg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-4.jpeg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-4.jpeg" alt="" />
+                  <div class="underline"></div>
+                </div>
+              </div>
+            </div>
+            <div class="items five col-xs-12 col-md-6 col-md-push-6">
+              <i
+                ><img
+                  src="./images/school/banner-5.png"
+                  alt=""
+                  style="display: block"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-5.png"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-5.png"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-5.png"
+                  alt=""
+                  style="display: none"
+              /></i>
+            </div>
+            <div class="items five col-xs-12 col-md-6 col-md-pull-6">
+              <div class="summary">
+                <span class="title hidden-xs hidden-sm"> 醇泉湖 </span>
+                <span class="title sm visible-xs visible-sm"> 醇泉湖 </span>
+                <div class="visible-md visible-lg">
+                  <p>
+					周围湖潭映月，壁潭辉映，人游其中如醇泉之上，美景、诗情、画意尽有。醇泉湖上的月，勾起了我的梦；                    
+                  </p>
+                  <p>
+                    周围湖潭映月，壁潭辉映，人游其中如醇泉之上，美景、诗情、画意尽有。醇泉湖上的月，勾起了我的梦；
+                    
+                  </p>
+                  <p>
+                    周围湖潭映月，壁潭辉映，人游其中如醇泉之上，美景、诗情、画意尽有。醇泉湖上的月，勾起了我的梦；醇泉湖下的水，打湿了心头思乡的那份感动。
+                    
+                  </p>
+                </div>
+                <div class="xs visible-xs visible-sm">
+                  <p>
+                    周围湖潭映月，壁潭辉映，人游其中如醇泉之上，美景、诗情、画意尽有。醇泉湖上的月，勾起了我的梦；
+                    
+                  </p>
+                  <p>
+                    周围湖潭映月，壁潭辉映，人游其中如醇泉之上，美景、诗情、画意尽有。醇泉湖上的月，勾起了我的梦；
+				
+                    
+                  </p>
+                  <p>
+                    周围湖潭映月，壁潭辉映，人游其中如醇泉之上，美景、诗情、画意尽有。醇泉湖上的月，勾起了我的梦；醇泉湖下的水，打湿了心头思乡的那份感动。
+                    
+                  </p>
+                </div>
+              </div>
+              <div class="list-img hidden-xs hidden-sm">
+                <div class="items-img current">
+                  <img src="./images/school/banner-5.png" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-5.png" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-5.png" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-5.png" alt="" />
+                  <div class="underline"></div>
+                </div>
+              </div>
+            </div>
+            <div class="items six col-xs-12 col-md-6">
+              <i
+                ><img
+                  src="./images/school/banner-6.jpg"
+                  alt=""
+                  style="display: block"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-6.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-6.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+              <i
+                ><img
+                  src="./images/school/banner-6.jpg"
+                  alt=""
+                  style="display: none"
+              /></i>
+            </div>
+            <div class="items six col-xs-12 col-md-6">
+              <div class="summary">
+                <span class="title hidden-xs hidden-sm"> 文化广场 </span>
+                <span class="title sm visible-xs visible-sm"> 文化广场 </span>
+                <div class="visible-md visible-lg">
+                  <p>
+                    文化广场位于四川轻化工大学城校内。
+                  </p>
+                  <p>
+                    建筑的整体秉持“修旧如旧、简约现代”的理念，文化广场的建设，搭建校友与母校、校友与校友、校友与准校友之间的沟通交流平台，助力学校改革发展。
+                  </p>
+                  <p>
+                    在不久的将来，文化广场将会成为学校老师和学弟学妹们新的“打卡点”，也将成为每位四川轻化工大学学子们新的“校友之家”。
+                  </p>
+                </div>
+                <div class="xs visible-xs visible-sm">
+                  <p>
+                    文化广场位于四川轻化工大学城校内。
+                  </p>
+                  <p>
+                    文化广场的建设，搭建校友与母校、校友与校友、校友与准校友之间的沟通交流平台，助力学校改革发展。
+                  </p>
+                  <p>
+                    文化广场将会成为学校老师和学弟学妹们新的“打卡点”，也将成为每位四川轻化工大学学子们新的“校友之家”。
+                  </p>
+                </div>
+              </div>
+              <div class="list-img hidden-xs hidden-sm">
+                <div class="items-img current">
+                  <img src="./images/school/banner-6.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-6.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-6.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+                <div class="items-img">
+                  <img src="./images/school/banner-6.jpg" alt="" />
+                  <div class="underline"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 照片墙模块 -->
+      <div class="row">
+        <div class="photo">
+          <div class="head">
+            <h4 class="visible-xs">校园景色一览</h4>
+            <h3 class="visible-sm visible-md">校园景色一览</h3>
+            <h2 class="visible-lg">校园景色一览</h2>
+          </div>
+          <div class="photo-wall">
+            <i class="items"
+              ><img src="./images/school/photo-1.jpg" alt="" />林间小道</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-2.jpg" alt="" />棕颈勾嘴鹛</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-3.jpg" alt="" />白颊噪鹛</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-4.jpg" alt="" />暗绿绣眼鸟</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-5.jpg" alt="" />叉尾太阳鸟</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-6.jpg" alt="" />家燕</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-7.jpg" alt="" />噪鹃</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-8.jpg" alt="" />丝光椋鸟</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-9.jpg" alt="" />黄腹山雀</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-10.jpg" alt="" />树麻雀</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-11.jpg" alt="" />刺槐</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-12.jpg" alt="" />黄菖蒲</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-13.jpg" alt="" />野天胡荽</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-14.jpg" alt="" />鸡爪槭</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-15.png" alt="" />紫叶李</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-16.png" alt="" />金盏菊</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-17.png" alt="" />地锦苗</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-18.png" alt="" />白车轴草</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-19.png" alt="" />牡丹</i
+            >
+            <i class="items"
+              ><img src="./images/school/photo-20.jpg" alt="" />垂丝海棠</i
+            >
+          </div>
+        </div>
+      </div>
+      <!-- 页脚模块 -->
+      <div class="row">
+        <div class="footer">
+          <div class="center">
+            <div class="copyright">
+              <p class="hidden-xs">四川轻化工大学</p>
+              <p class="hidden-xs">计算机科学与技术2021级</p>
+              <p>陈驰鑫个人网站</p>
+              <p></p>
+            </div>
+            <ul class="list">
+              <span class="hidden-xs">联系方式</span>
+              <li>
+                <a
+                  href="http://wpa.qq.com/msgrd?v=3&amp;uin=2303418053&amp;site=qq&amp;menu=yes"
+                >
+                  <i class="iconfont icon-tubiao215"></i>
+                  <span class="hidden-xs">QQ</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:15736576364">
+                  <i class="iconfont icon-dianhua"></i>
+                  <span class="hidden-xs">电话</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=2303418053@qq.com"
+                >
+                  <i class="iconfont icon-youxiang"></i>
+                  <span class="hidden-xs">邮箱</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 返回顶部模块 -->
+      <div class="back">
+        <div class="xs visible-xs">
+          <span class="iconfont icon-fanhuidingbu"></span>
+        </div>
+        <div class="hidden-xs">
+          <span class="iconfont icon-fanhuidingbu"></span>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/school/index.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/mend.js"></script>
+    <script src="./js/school/sideshow.js"></script>
+    <script src="./js/school/sideshow-index.js"></script>
+    <script></script>
+  </body>
+</html>
